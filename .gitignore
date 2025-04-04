@@ -1,0 +1,12 @@
+# Local .gitignore to supplement ~/.gitignore_global
+
+# -------------------Folders
+.mypy_cache/
+build/
+.pytest_cache/
+.hidden/
+
+# -------------------Files
+*Icon*
+todo.txt
+*.DS_Store*
