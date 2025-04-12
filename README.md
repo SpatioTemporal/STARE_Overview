@@ -74,7 +74,7 @@ Basic tutorial for STARE
 ## Install STARE, pySTARE and STAREPandas and Jupyter Lab:
 We recommend installing using conda (or miniconda). Please see [Conda installation instructions](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
-Below are the steps to install STARE, pystare, and starepandas with conda. We also recommend installing JupyterLab (or Jupyter Notebook). Then, set up this conda environment as a kernel for this notebook so that you can use all the libraries without any further installation.
+Below are the steps to install STARE, pySTARE, and STAREPandas with conda. We also recommend installing JupyterLab (or Jupyter Notebook). Then, set up this conda environment as a kernel for this notebook so that you can use all the libraries without any further installation.
 #### 1. STARE and pySTARE installation: https://github.com/SpatioTemporal/pystare/blob/master/README.md
 #### 2. STAREPandas installation: https://github.com/SpatioTemporal/STAREPandas/blob/master/README.md
 #### 3. JupyterLab & Tmux & install STARE kernel:
