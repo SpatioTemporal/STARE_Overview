@@ -70,3 +70,45 @@ Basic tutorial for STARE
         - xarray                    2025.3.1
         - yaml                      0.2.5
         - zarr                      3.0.6
+
+## Install STARE, pySTARE and STAREPandas and Jupyter Lab:
+We recommend installing using conda (or miniconda). Please see [Conda installation instructions](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html).
+
+Below are the steps to install STARE, pystare, and starepandas with conda. We also recommend installing JupyterLab (or Jupyter Notebook). Then, set up this conda environment as a kernel for this notebook so that you can use all the libraries without any further installation.
+#### 1. STARE and pySTARE installation: https://github.com/SpatioTemporal/pystare/blob/master/README.md
+#### 2. STAREPandas installation: https://github.com/SpatioTemporal/STAREPandas/blob/master/README.md
+#### 3. JupyterLab & Tmux & install STARE kernel:
+##### Tmux: 
+```shell
+    $ conda install -c conda-forge tmux
+```
+##### JupyterLab:
+```shell
+    $ conda install -c conda-forge jupyterlab
+```
+##### Setting up the `stare` kernel for jupyter lab
+```shell
+    $ conda create -n stare
+    $ conda env list
+    $ conda activate stare
+    $ conda install -c conda-forge ipykernel
+    $ python -m ipykernel install --user --name=stare
+    $ conda deactivate stare
+```
+##### Run jupyter Lab
+```shell
+  $ tmux new -s stareLab
+  (or if stareLab session if already exists) $ tmux a -t stareLab
+  $ jupyter lab --ip 0.0.0.0 --no-browser --allow-root
+  (Take the token from the console: e.g: 2ba47a5fb63ba45d442443db94b03d111e5cabcbb3cb3edc)
+  
+  (Log out from tmux session by:)
+  $ Ctrl + B
+  $ D
+```
+##### Connect to your localhost jupyter Lab 
+- From the web browser: <your-machine-public-ip-address>:888
+- E.g: http://127.0.0.1:8888 or localhost:8888
+- Use the token above to login or set up a new password for your jupyter lab
+- Download `*.ipynb` to your notebook
+- Run the `*.ipynb`
