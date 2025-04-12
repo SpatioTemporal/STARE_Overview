@@ -107,7 +107,7 @@ Below are the steps to install STARE, pySTARE, and STAREPandas with conda. We al
   $ D
 ```
 ##### Connect to your localhost jupyter Lab 
-- From the web browser: <your-machine-public-ip-address>:888
+- From the web browser: [your-machine-public-ip-address]:8888
 - E.g: http://127.0.0.1:8888 or localhost:8888
 - Use the token above to login or set up a new password for your jupyter lab
 - Download `*.ipynb` to your notebook
